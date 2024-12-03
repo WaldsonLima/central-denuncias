@@ -1,0 +1,222 @@
+﻿/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+.link-formated {
+    text-decoration: none !important;
+    color: #FFFFFF !important;
+}
+
+.btn-criar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    .btn-criar:hover {
+        background-color: #218838;
+    }
+
+/* Tabela */
+.tabela-denuncias {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .tabela-denuncias th,
+    .tabela-denuncias td {
+        padding: 12px;
+        text-align: left;
+    }
+
+    .tabela-denuncias th {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .tabela-denuncias td {
+        background-color: #ffffff;
+        border-bottom: 1px solid #ddd;
+    }
+
+        .tabela-denuncias td a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .tabela-denuncias td a:hover {
+                text-decoration: underline;
+            }
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-editar {
+    background-color: #ffc107;
+    color: white;
+}
+
+    .btn-editar:hover {
+        background-color: #e0a800;
+    }
+
+.btn-detalhes {
+    background-color: #007bff;
+    color: white;
+}
+
+    .btn-detalhes:hover {
+        background-color: #0056b3;
+    }
+
+/* Estilos para responsividade */
+@media screen and (max-width: 768px) {
+    .tabela-denuncias th,
+    .tabela-denuncias td {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn-criar {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .btn-criar {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .tabela-denuncias {
+        width: 250px;
+        font-size: 12px;
+    }
+
+        .tabela-denuncias th,
+        .tabela-denuncias td {
+            padding: 6px;
+        }
+
+    button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Estilos para a seção de filtro */
+.filtro {
+    margin: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.campo-filtro {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .campo-filtro label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .campo-filtro input,
+    .campo-filtro select {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.btn-filtrar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-filtrar:hover {
+        background-color: #0056b3;
+    }
+
+.container-btn-pesquisar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link_membro_text {
+    text-overflow: ellipsis;
+}
+
+.link_membro {
+    max-width: 200px;
+    overflow: hidden;
+}

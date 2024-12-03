@@ -1,0 +1,105 @@
+﻿@model CentralDenuncias.Models.denuncia
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes da Denúncia</title>
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="~/css/detalhes.css">
+</head>
+<body>
+    <header>
+        <h1>Detalhes da Denúncia</h1>
+        <div class="container-btn-voltar"><a href="@Url.Action("Index", "Home")" class="btn-voltar">Voltar</a></div>
+    </header>
+
+    <main class="detalhes-main">
+        <section class="detalhes-container">
+            <div class="detalhe">
+                <strong>Link Membro:</strong>
+                <p><a href="@Html.DisplayFor(model => model.link_membro)">@Html.DisplayFor(model => model.link_membro)</a></p>
+            </div>
+            <div class="detalhe">
+                <strong>Descrição:</strong>
+                <p>@Html.DisplayFor(model => model.descricao)</p>
+            </div>
+            <div class="detalhe">
+                <strong>Provas:</strong>
+
+                <p><a href="@Html.DisplayFor(model => model.provas)">Clique para baixar</a></p>
+            </div>
+            <div class="detalhe">
+                <strong>Staffer Responsável:</strong>
+                <p>@Html.DisplayFor(model => model.staffer)</p>
+            </div>
+            <div class="detalhe">
+                <strong>Data da Denúncia:</strong>
+                <p>@Html.DisplayFor(model => model.data_criacao)</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Central de Denúncias Namoro!. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+@*------------------------------------------------------------------------------------------------------------------------------------*@
+
+@* <h1>Details</h1> *@
+
+@* <div> *@
+@*     <h4>denuncia</h4> *@
+@*     <hr /> *@
+@*     <dl class="row"> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.link_membro) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.link_membro) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.descricao) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.descricao) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.provas) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.provas) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.staffer) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.staffer) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.data_criacao) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.data_criacao) *@
+@*         </dd> *@
+@*         <dt class = "col-sm-2"> *@
+@*             @Html.DisplayNameFor(model => model.data_alteracao) *@
+@*         </dt> *@
+@*         <dd class = "col-sm-10"> *@
+@*             @Html.DisplayFor(model => model.data_alteracao) *@
+@*         </dd> *@
+@*     </dl> *@
+@* </div> *@
+@* <div> *@
+@*     <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> | *@
+@*     <a asp-action="Index">Back to List</a> *@
+@* </div> *@

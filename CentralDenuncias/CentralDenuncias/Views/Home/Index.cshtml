@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CentralDenuncias.Models.denuncia>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Denúncias</title>
+    <link rel="stylesheet" href="~/css/denuncia.css">
+</head>
+<body>
+    <header>
+        <h1>Central de Denúncias</h1>
+        <button class="btn-criar"><a asp-action="Create" class="link-formated">Criar Denúncia</a></button>
+    </header>
+
+    <!-- Filtro de Pesquisa -->
+    <section class="filtro">
+        <form asp-action="Index" class="form-filtro">
+            <div class="campo-filtro">
+                <label for="link">Link do membro</label>
+                <input type="text" id="link" name="link" value="@ViewData["link"]" placeholder="Pesquisar por link">
+            </div>
+
+            <div class="container-btn-pesquisar"><button type="submit" class="btn-filtrar">Pesquisar</button></div>
+        </form>
+    </section>
+
+    <!-- Lista de Denúncias -->
+    <main>
+        <table class="tabela-denuncias">
+            <thead>
+                <tr>
+                    <th>Link Membro</th>
+                    <th>Data</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Exemplo de linha de dados -->
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="link_membro"><a class ="link_membro_text" href="@item.link_membro">@item.link_membro</a></td>
+                        <td>@item.data_criacao.ToString("dd/MM/yyyy")</td>
+                        <td>
+                            <button class="btn-detalhes"><a asp-action="Details" asp-route-id="@item.id" class="link-formated">Detalhes</a></button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Central de Denúncias Namoro!. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+

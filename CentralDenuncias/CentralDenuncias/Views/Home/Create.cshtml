@@ -1,0 +1,57 @@
+﻿@model CentralDenuncias.Models.denuncia
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Denúncia</title>
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="~/css/criar.css">
+</head>
+<body>
+    <header>
+        <h1>Criar Nova Denúncia</h1>
+        <div class="container-btn-voltar"><a href="@Url.Action("Index", "Home")" class="btn-voltar">Voltar</a></div>
+    </header>
+
+    <main class="form-main">
+        <form asp-action="Create" class="form-criar">
+            <div class="campo-form">
+                <label asp-for="link_membro">Link Membro</label>
+                <input asp-for="link_membro" type="text" id="link_membro" name="link_membro" placeholder="Insira o link do membro" required>
+            </div>
+            <div class="campo-form">
+                <label asp-for="descricao">Descrição</label>
+                <textarea asp-for="descricao" id="descricao" name="descricao" placeholder="Descreva o motivo da denúncia" required></textarea>
+            </div>
+            <div class="campo-form">
+                <label asp-for="provas">Provas</label>
+                <input asp-for="provas" type="text" id="provas" name="provas" placeholder="Insira os links das provas" required>
+            </div>
+            <div class="campo-form">
+                <label asp-for="staffer">Staffer Responsável</label>
+                <input asp-for="staffer" type="text" id="staffer" name="staffer" placeholder="Nome do staffer responsável" required>
+            </div>
+
+            <div class="botoes-form">
+                <button type="submit" class="btn-salvar">Criar Denúncia</button>
+                <button type="reset" class="btn-cancelar">Limpar</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Central de Denúncias Namoro!. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
