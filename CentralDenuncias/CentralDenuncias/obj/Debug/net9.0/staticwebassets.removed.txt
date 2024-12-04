@@ -1,0 +1,2 @@
+C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\wwwroot\css\log.css
+C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\wwwroot\css\login.css

@@ -1,0 +1,132 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+
+    <!-- Estilos CSS incorporados no arquivo cshtml -->
+    <style>
+        /* Estilos globais para o site */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9; /* Cor de fundo suave */
+            color: #333; /* Texto em cinza escuro */
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centralização do conteúdo da página */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Altura total da tela */
+        }
+
+        /* Estilos para o formulário de login */
+        form {
+            background-color: #fff; /* Fundo branco */
+            padding: 30px;
+            border-radius: 8px; /* Bordas arredondadas */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            width: 75%;
+            max-width: 400px; /* Largura máxima */
+            text-align: center;
+        }
+
+            form h2 {
+                margin-bottom: 20px;
+                color: #5e5e5e; /* Cor do título */
+            }
+
+            form label {
+                font-size: 14px;
+                color: #555; /* Cor de rótulo suave */
+                margin-bottom: 10px;
+                display: block;
+            }
+
+            form input[type="password"] {
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd; /* Borda leve */
+                border-radius: 5px; /* Bordas arredondadas */
+                font-size: 16px;
+                color: #333;
+                transition: border-color 0.3s;
+            }
+
+                form input[type="password"]:focus {
+                    border-color: #4c8bf5; /* Cor de borda ao focar */
+                    outline: none;
+                }
+
+            form button {
+                width: 100%;
+                padding: 12px;
+                background-color: #4c8bf5; /* Cor do botão */
+                color: white;
+                border: none;
+                border-radius: 5px; /* Bordas arredondadas */
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                form button:hover {
+                    background-color: #3870c0; /* Cor de fundo ao passar o mouse */
+                }
+
+            /* Exibição de mensagens de erro */
+            form .error-message {
+                color: red;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+
+        /* Estilo para o link de voltar */
+        a.voltar {
+            display: inline-block;
+            margin-top: 20px;
+            color: #4c8bf5;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+            a.voltar:hover {
+                color: #3870c0;
+            }
+
+        /* Responsividade para telas menores */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="/Home/Login">
+            <h2>@ViewData["Title"]</h2>
+
+            <label for="senha">Digite a senha:</label>
+            <input type="password" id="senha" name="senha" required />
+
+            <button type="submit">Entrar</button>
+
+            @if (ViewBag.Erro != null)
+            {
+                <div class="error-message">@ViewBag.Erro</div>
+            }
+
+            <!-- Link de voltar à página anterior -->
+            <a href="/" class="voltar">Voltar</a>
+        </form>
+    </div>
+</body>
+</html>

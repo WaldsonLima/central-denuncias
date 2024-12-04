@@ -5,9 +5,15 @@ namespace CentralDenuncias.Context
 {
     public class Database : DbContext
     {
+        private readonly IConfiguration _configuration;
+        public Database(DbContextOptions<Database> options, IConfiguration configuration)
+            : base(options)
+        {
+            _configuration = configuration;
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("User ID=postgres;Password=06SxkU2BDTsh9GqL;Host=bashfully-pioneering-ox.data-1.use1.tembo.io;Port=5432;Database=app;Pooling=true;");
+            optionsBuilder.UseNpgsql(_configuration.GetConnectionString("Default"));
         }
         public DbSet<denuncia> denuncia { get; set; }
     }

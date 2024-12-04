@@ -5,7 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<Database>();
+builder.Services.AddDbContext<Database>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Default"))
+);
 
 var app = builder.Build();
 
@@ -23,6 +25,20 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapStaticAssets();
+
+app.Use(async (context, next) =>
+{
+    // Verifica se a URL solicitada não é a página de login e o cookie de senha não existe
+    if (!context.Request.Cookies.ContainsKey("SenhaAutenticada") && context.Request.Path != "/Home/Login")
+    {
+        context.Response.Redirect("/Home/Login");
+    }
+    else
+    {
+        // Caso contrário, segue para o próximo middleware ou action
+        await next.Invoke();
+    }
+});
 
 app.MapControllerRoute(
     name: "default",

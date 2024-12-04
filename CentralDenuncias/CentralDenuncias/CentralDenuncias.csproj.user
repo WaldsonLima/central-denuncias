@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>CentralDenuncias.Context.Database</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\Properties\PublishProfiles\centraldenuncias - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

@@ -33,6 +33,35 @@ namespace CentralDenuncias.Controllers
             return View(await denuncias.ToListAsync());
         }
 
+        // Página de login
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        // Ação de login, que valida a senha
+        [HttpPost]
+        public IActionResult Login(string senha)
+        {
+            string senhaCorreta = "totoro0606";
+
+            if (senha == senhaCorreta)
+            {
+                // Armazena o cookie para indicar que o usuário está autenticado
+                Response.Cookies.Append("SenhaAutenticada", "true", new CookieOptions
+                {
+                    Expires = DateTime.Now.AddMinutes(30) // Tempo que o cookie ficará válido
+                });
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ViewBag.Erro = "Senha incorreta!";
+                return View("Login");
+            }
+        }
+
         // GET: denuncia/Details/5
         public async Task<IActionResult> Details(int? id)
         {

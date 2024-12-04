@@ -1,0 +1,116 @@
+﻿/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.container-btn-voltar {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.btn-voltar {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: 2px solid white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+    .btn-voltar:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+/* Seção de Detalhes */
+.detalhes-main {
+    padding: 20px;
+}
+
+.detalhes-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalhe {
+    margin-bottom: 15px;
+}
+
+    .detalhe strong {
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .detalhe p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+/* Estilos para responsividade */
+@media screen and (max-width: 768px) {
+    .detalhes-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .detalhe p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .btn-voltar {
+        font-size: 14px;
+    }
+
+    .detalhes-container {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .detalhe p {
+        font-size: 14px;
+    }
+}
