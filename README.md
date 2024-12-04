@@ -4,3 +4,5 @@ Essa é uma aplicação desenvolvida para a administração de uma comunidade on
 O site foi pensado para ser acessado somente por aparelhos mobile, então sua está foi criada a partir disso.
 
 Você pode acessar o site em produção a partir do seguinte link: https://centraldenuncias-f4aecreweaerf0c5.brazilsouth-01.azurewebsites.net/
+
+O deploy do site foi feito uzando o Azure.
