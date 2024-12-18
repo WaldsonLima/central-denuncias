@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+W7+hZEHGMJzZoLBQFoQUuIzVqCkdNtXf4xbeSlS8mQ=",
+  "Hash": "PqEyOmEv3K6wnLRDy+HthCXmwDOnGp/SUJYgNU2ry1U=",
   "Source": "CentralDenuncias",
   "BasePath": "_content/CentralDenuncias",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-qwi2jdwffa.gz",
+      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-ny3lq89l23.gz",
       "SourceId": "CentralDenuncias",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/CentralDenuncias",
-      "RelativePath": "css/criar#[.{fingerprint=qwi2jdwffa}]?.css.gz",
+      "RelativePath": "css/criar#[.{fingerprint=ny3lq89l23}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "ovrchk5n4v",
-      "Integrity": "3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U=",
+      "Fingerprint": "azptkzw2ri",
+      "Integrity": "OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css"
@@ -1480,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qwi2jdwffa",
-      "Integrity": "xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0=",
+      "Fingerprint": "ny3lq89l23",
+      "Integrity": "sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\criar.css"
@@ -3451,12 +3451,12 @@
     },
     {
       "Route": "css/criar.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-qwi2jdwffa.gz",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-ny3lq89l23.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001200480192"
+          "Quality": "0.000975609756"
         }
       ],
       "ResponseHeaders": [
@@ -3466,15 +3466,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "832"
+          "Value": "1024"
         },
         {
           "Name": "ETag",
-          "Value": "\"3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U=\""
+          "Value": "\"OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 22:17:51 GMT"
+          "Value": "Wed, 18 Dec 2024 00:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3494,13 +3494,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0=\""
+          "Value": "W/\"sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0="
+          "Value": "sha256-sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY="
         }
       ]
     },
@@ -3515,7 +3515,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2860"
+          "Value": "3610"
         },
         {
           "Name": "Content-Type",
@@ -3523,11 +3523,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0=\""
+          "Value": "\"sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 22:17:51 GMT"
+          "Value": "Wed, 18 Dec 2024 00:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3537,13 +3537,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0="
+          "Value": "sha256-sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY="
         }
       ]
     },
     {
       "Route": "css/criar.css.gz",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-qwi2jdwffa.gz",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-ny3lq89l23.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3552,7 +3552,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "832"
+          "Value": "1024"
         },
         {
           "Name": "Content-Type",
@@ -3560,11 +3560,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U=\""
+          "Value": "\"OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 22:17:51 GMT"
+          "Value": "Wed, 18 Dec 2024 00:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3582,18 +3582,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U="
+          "Value": "sha256-OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko="
         }
       ]
     },
     {
-      "Route": "css/criar.qwi2jdwffa.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-qwi2jdwffa.gz",
+      "Route": "css/criar.ny3lq89l23.css",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-ny3lq89l23.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001200480192"
+          "Quality": "0.000975609756"
         }
       ],
       "ResponseHeaders": [
@@ -3603,15 +3603,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "832"
+          "Value": "1024"
         },
         {
           "Name": "ETag",
-          "Value": "\"3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U=\""
+          "Value": "\"OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 22:17:51 GMT"
+          "Value": "Wed, 18 Dec 2024 00:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3631,13 +3631,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0=\""
+          "Value": "W/\"sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qwi2jdwffa"
+          "Value": "ny3lq89l23"
         },
         {
           "Name": "label",
@@ -3645,12 +3645,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0="
+          "Value": "sha256-sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY="
         }
       ]
     },
     {
-      "Route": "css/criar.qwi2jdwffa.css",
+      "Route": "css/criar.ny3lq89l23.css",
       "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3660,7 +3660,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2860"
+          "Value": "3610"
         },
         {
           "Name": "Content-Type",
@@ -3668,11 +3668,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0=\""
+          "Value": "\"sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 22:17:51 GMT"
+          "Value": "Wed, 18 Dec 2024 00:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3682,7 +3682,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qwi2jdwffa"
+          "Value": "ny3lq89l23"
         },
         {
           "Name": "label",
@@ -3690,13 +3690,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0="
+          "Value": "sha256-sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY="
         }
       ]
     },
     {
-      "Route": "css/criar.qwi2jdwffa.css.gz",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-qwi2jdwffa.gz",
+      "Route": "css/criar.ny3lq89l23.css.gz",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-ny3lq89l23.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3705,7 +3705,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "832"
+          "Value": "1024"
         },
         {
           "Name": "Content-Type",
@@ -3713,11 +3713,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U=\""
+          "Value": "\"OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 03 Dec 2024 22:17:51 GMT"
+          "Value": "Wed, 18 Dec 2024 00:48:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3735,7 +3735,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qwi2jdwffa"
+          "Value": "ny3lq89l23"
         },
         {
           "Name": "label",
@@ -3743,7 +3743,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3FartMa5/MTZkNnADhsp4mhUPDkfjeBGvCLrrdroB7U="
+          "Value": "sha256-OleEaoDs/B7esiIHz4yBu5f0ZpqKAQwAjZZkqJQBfko="
         }
       ]
     },

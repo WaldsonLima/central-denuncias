@@ -2,6 +2,10 @@
 
 @{
     ViewData["Title"] = "Details";
+
+    // Convertemos a data para o fuso horário de Brasília (GMT-3)
+    var timeZone = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time"); // Fuso horário de Brasília (GMT-3)
+    var dataBrasilia = TimeZoneInfo.ConvertTimeFromUtc(Model.data_criacao, timeZone);
 }
 
 <!DOCTYPE html>
@@ -41,7 +45,7 @@
             </div>
             <div class="detalhe">
                 <strong>Data da Denúncia:</strong>
-                <p>@Html.DisplayFor(model => model.data_criacao)</p>
+                <p>@dataBrasilia.ToString("dd/MM/yyyy")</p>
             </div>
         </section>
     </main>
@@ -51,55 +55,3 @@
     </footer>
 </body>
 </html>
-
-
-@*------------------------------------------------------------------------------------------------------------------------------------*@
-
-@* <h1>Details</h1> *@
-
-@* <div> *@
-@*     <h4>denuncia</h4> *@
-@*     <hr /> *@
-@*     <dl class="row"> *@
-@*         <dt class = "col-sm-2"> *@
-@*             @Html.DisplayNameFor(model => model.link_membro) *@
-@*         </dt> *@
-@*         <dd class = "col-sm-10"> *@
-@*             @Html.DisplayFor(model => model.link_membro) *@
-@*         </dd> *@
-@*         <dt class = "col-sm-2"> *@
-@*             @Html.DisplayNameFor(model => model.descricao) *@
-@*         </dt> *@
-@*         <dd class = "col-sm-10"> *@
-@*             @Html.DisplayFor(model => model.descricao) *@
-@*         </dd> *@
-@*         <dt class = "col-sm-2"> *@
-@*             @Html.DisplayNameFor(model => model.provas) *@
-@*         </dt> *@
-@*         <dd class = "col-sm-10"> *@
-@*             @Html.DisplayFor(model => model.provas) *@
-@*         </dd> *@
-@*         <dt class = "col-sm-2"> *@
-@*             @Html.DisplayNameFor(model => model.staffer) *@
-@*         </dt> *@
-@*         <dd class = "col-sm-10"> *@
-@*             @Html.DisplayFor(model => model.staffer) *@
-@*         </dd> *@
-@*         <dt class = "col-sm-2"> *@
-@*             @Html.DisplayNameFor(model => model.data_criacao) *@
-@*         </dt> *@
-@*         <dd class = "col-sm-10"> *@
-@*             @Html.DisplayFor(model => model.data_criacao) *@
-@*         </dd> *@
-@*         <dt class = "col-sm-2"> *@
-@*             @Html.DisplayNameFor(model => model.data_alteracao) *@
-@*         </dt> *@
-@*         <dd class = "col-sm-10"> *@
-@*             @Html.DisplayFor(model => model.data_alteracao) *@
-@*         </dd> *@
-@*     </dl> *@
-@* </div> *@
-@* <div> *@
-@*     <a asp-action="Edit" asp-route-id="@Model?.id">Edit</a> | *@
-@*     <a asp-action="Index">Back to List</a> *@
-@* </div> *@

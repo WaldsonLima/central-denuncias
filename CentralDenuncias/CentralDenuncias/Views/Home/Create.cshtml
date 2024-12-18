@@ -35,6 +35,16 @@
                 <input asp-for="provas" type="text" id="provas" name="provas" placeholder="Insira os links das provas" required>
             </div>
             <div class="campo-form">
+                <label asp-for="denuncia_permanente">Tipo da denúncia</label>
+                <select asp-for="denuncia_permanente" id="denuncia_permanente" name="denuncia_permanente" required>
+                    <option value="" disabled selected>Selecione o tipo da denúncia</option>
+                    <option value="true">Membro banido</option>
+                    <option value="false">Bot Spam</option>
+                    <option value="false">Ocultamento de membro</option>
+                    <option value="true">Outro</option>
+                </select>
+            </div>
+            <div class="campo-form">
                 <label asp-for="staffer">Staffer Responsável</label>
                 <input asp-for="staffer" type="text" id="staffer" name="staffer" placeholder="Nome do staffer responsável" required>
             </div>

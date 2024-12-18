@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qwi2jdwffa</Fingerprint>
-      <Integrity>xizefOYBocvlNjF/rK0RLCgta+MrZ61FqIlxPBDaMk0=</Integrity>
+      <Fingerprint>ny3lq89l23</Fingerprint>
+      <Integrity>sa6Qu2NBhyfm1n5tU9ySbZFHg1KxKUJudJxIn5fratY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\criar.css'))</OriginalItemSpec>

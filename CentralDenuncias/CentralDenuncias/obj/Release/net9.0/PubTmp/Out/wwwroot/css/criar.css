@@ -76,7 +76,8 @@ h1 {
     }
 
     .campo-form input,
-    .campo-form textarea {
+    .campo-form textarea,
+    .campo-form select {
         width: 100%;
         padding: 10px;
         border: 1px solid #ccc;
@@ -88,6 +89,28 @@ h1 {
         resize: vertical;
         height: 120px;
     }
+
+    /* Estilos para o select */
+    .campo-form select {
+        background-color: #fff;
+        appearance: none; /* Remove a setinha padrão */
+        -webkit-appearance: none; /* Remove a setinha no Safari */
+        -moz-appearance: none; /* Remove a setinha no Firefox */
+        position: relative;
+    }
+
+        /* Estilo para adicionar uma setinha customizada */
+        .campo-form select:focus {
+            border-color: #007bff;
+        }
+
+        .campo-form select::-ms-expand {
+            display: none; /* Remove a setinha no Internet Explorer */
+        }
+
+        .campo-form select option {
+            font-size: 16px;
+        }
 
 /* Botões */
 .botoes-form {
@@ -130,7 +153,8 @@ button {
 
     .campo-form label,
     .campo-form input,
-    .campo-form textarea {
+    .campo-form textarea,
+    .campo-form select {
         font-size: 14px;
     }
 
@@ -159,7 +183,8 @@ button {
 
     .campo-form label,
     .campo-form input,
-    .campo-form textarea {
+    .campo-form textarea,
+    .campo-form select {
         font-size: 14px;
     }
 

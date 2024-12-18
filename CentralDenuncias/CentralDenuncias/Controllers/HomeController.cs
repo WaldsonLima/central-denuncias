@@ -58,7 +58,7 @@ namespace CentralDenuncias.Controllers
                 { "2bfn", new Tuple<string, string>("Moon", "false") },
                 { "yy9r", new Tuple<string, string>("ForUs", "false") },
                 { "cnn9", new Tuple<string, string>("Olivia", "false") },
-                { "7tyt", new Tuple<string, string>("Rychard", "false") },
+                { "7tyt", new Tuple<string, string>("Rychard", "true") },
                 { "adnb", new Tuple<string, string>("Manoella", "false") }
             };
 
@@ -153,7 +153,7 @@ namespace CentralDenuncias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,link_membro,descricao,provas,staffer,data_criacao,data_alteracao")] denuncia denuncia)
+        public async Task<IActionResult> Create([Bind("id,link_membro,descricao,provas,staffer,denuncia_permanente,data_criacao,data_alteracao")] denuncia denuncia)
         {
             denuncia.data_criacao = DateTime.UtcNow;
             denuncia.data_alteracao = DateTime.UtcNow;
