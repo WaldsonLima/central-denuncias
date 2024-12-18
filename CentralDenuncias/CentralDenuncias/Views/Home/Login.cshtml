@@ -53,7 +53,7 @@
             }
 
             form input[type="password"] {
-                width: 100%;
+                width: 90%;
                 padding: 12px;
                 margin-bottom: 20px;
                 border: 1px solid #ddd; /* Borda leve */
@@ -114,8 +114,7 @@
         <form method="post" action="/Home/Login">
             <h2>@ViewData["Title"]</h2>
 
-            <label for="senha">Digite a senha:</label>
-            <input type="password" id="senha" name="senha" required />
+            <input type="password" id="senha" name="senha" placeholder="Digite a senha" required />
 
             <button type="submit">Entrar</button>
 
@@ -123,9 +122,6 @@
             {
                 <div class="error-message">@ViewBag.Erro</div>
             }
-
-            <!-- Link de voltar à página anterior -->
-            <a href="/" class="voltar">Voltar</a>
         </form>
     </div>
 </body>

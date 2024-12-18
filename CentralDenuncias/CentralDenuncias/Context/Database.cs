@@ -1,4 +1,5 @@
 ﻿using CentralDenuncias.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CentralDenuncias.Context
@@ -16,5 +17,6 @@ namespace CentralDenuncias.Context
             optionsBuilder.UseNpgsql(_configuration.GetConnectionString("Default"));
         }
         public DbSet<denuncia> denuncia { get; set; }
+        public DbSet<ip> ip { get; set;  }
     }
 }

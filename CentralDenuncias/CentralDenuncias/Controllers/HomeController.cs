@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Net;
 using System.Text.RegularExpressions;
 using CentralDenuncias.Context;
 using CentralDenuncias.Models;
@@ -21,6 +22,7 @@ namespace CentralDenuncias.Controllers
         public async Task<IActionResult> Index(string link)
         {
             var denuncias = _context.denuncia.AsQueryable();
+            string adm = HttpContext.Session.GetString("adm");
 
             if (!string.IsNullOrEmpty(link))
             {
@@ -29,6 +31,7 @@ namespace CentralDenuncias.Controllers
 
             // Passando os parâmetros para a View
             ViewData["Link"] = link;
+            ViewBag.adm = adm;
 
             return View(await denuncias.ToListAsync());
         }
@@ -41,18 +44,34 @@ namespace CentralDenuncias.Controllers
 
         // Ação de login, que valida a senha
         [HttpPost]
-        public IActionResult Login(string senha)
+        public async Task<IActionResult> Login(string senha)
         {
-            string senhaCorreta = "totoro0606";
-
-            if (senha == senhaCorreta)
+            var usuarios = new Dictionary<string, Tuple<string, string>>
             {
+                { "3301", new Tuple<string, string>("Totoro", "true") },
+                { "9ijq", new Tuple<string, string>("Aeon", "false") },
+                { "lgcy", new Tuple<string, string>("Agnes", "false") },
+                { "69zc", new Tuple<string, string>("Deku", "true") },
+                { "01dm", new Tuple<string, string>("Gab", "false") },
+                { "iqgc", new Tuple<string, string>("Aryc", "false") },
+                { "lt07", new Tuple<string, string>("Yuri", "false") },
+                { "2bfn", new Tuple<string, string>("Moon", "false") },
+                { "yy9r", new Tuple<string, string>("ForUs", "false") },
+                { "cnn9", new Tuple<string, string>("Olivia", "false") },
+                { "7tyt", new Tuple<string, string>("Rychard", "false") },
+                { "adnb", new Tuple<string, string>("Manoella", "false") }
+            };
+
+            if (usuarios.ContainsKey(senha))
+            {
+                var usuario = usuarios[senha];
                 // Armazena o cookie para indicar que o usuário está autenticado
                 Response.Cookies.Append("SenhaAutenticada", "true", new CookieOptions
                 {
                     Expires = DateTime.Now.AddMinutes(30) // Tempo que o cookie ficará válido
                 });
-
+                var ipInfos = new ip() { };
+                await unicLogin(usuario.Item1, usuario.Item2, ipInfos);
                 return RedirectToAction("Index");
             }
             else
@@ -60,6 +79,31 @@ namespace CentralDenuncias.Controllers
                 ViewBag.Erro = "Senha incorreta!";
                 return View("Login");
             }
+        }
+
+
+        [HttpPost]
+        public async Task unicLogin(string nomeStaffer, string isAdm, ip ipInfos)
+        {
+
+            // Obtém o IP do cliente a partir do cabeçalho X-Forwarded-For, se disponível
+            var ipAddress = Request.Headers["X-Forwarded-For"].FirstOrDefault();
+
+            // Caso o cabeçalho não esteja presente, usa o IP direto da conexão
+            if (string.IsNullOrEmpty(ipAddress))
+            {
+                ipAddress = HttpContext.Connection.RemoteIpAddress?.ToString();
+            }
+
+            ipInfos.nome_staffer = nomeStaffer;
+            ipInfos.ip_staffer = ipAddress;
+            ipInfos.data_acesso = DateTime.UtcNow;
+
+
+            _context.Add(ipInfos);
+            await _context.SaveChangesAsync();
+
+            HttpContext.Session.SetString("adm", isAdm);
         }
 
         // GET: denuncia/Details/5

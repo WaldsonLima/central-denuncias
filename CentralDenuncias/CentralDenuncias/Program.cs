@@ -1,4 +1,6 @@
 using CentralDenuncias.Context;
+using CentralDenuncias.Models;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,31 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Database>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("Default"))
 );
+builder.Services.AddAuthentication();
+builder.Services.AddAuthorization();
+builder.Services
+    .AddIdentityApiEndpoints<User>()
+    .AddEntityFrameworkStores<Database>();
+
+builder.Services.AddDistributedMemoryCache();
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Tempo máximo de inatividade antes de expirar
+    options.Cookie.HttpOnly = true;  // Protege o cookie da sessão
+    options.Cookie.IsEssential = true;  // Necessário para conformidade com o GDPR
+});
+builder.Services.AddControllersWithViews();
+
+// Configura o serviço para aceitar cabeçalhos de proxy como X-Forwarded-For
+builder.Services.Configure<IISOptions>(options =>
+{
+    options.ForwardClientCertificate = false; // Se você não usar SSL Client Certificates
+});
+
+builder.Services.AddRouting(options =>
+{
+    options.LowercaseUrls = true; // Opcional, mas pode ser útil
+});
 
 var app = builder.Build();
 
@@ -19,6 +46,12 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+// Habilita o middleware para usar os cabeçalhos de proxy (X-Forwarded-For)
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
+app.UseSession();
 app.UseHttpsRedirection();
 app.UseRouting();
 
@@ -45,5 +78,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}")
     .WithStaticAssets();
 
+app.MapIdentityApi<User>();
 
 app.Run();

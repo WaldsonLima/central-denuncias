@@ -47,6 +47,74 @@ h1 {
         background-color: #218838;
     }
 
+/* Estilos para a seção de filtro */
+.filtro {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+}
+
+.form-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.campo-filtro {
+    flex: 1;
+    min-width: 250px;
+}
+
+    .campo-filtro label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .campo-filtro input,
+    .campo-filtro select {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.btn-filtrar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .btn-filtrar:hover {
+        background-color: #0056b3;
+    }
+
+.container-btn-pesquisar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.link_membro_text {
+    text-overflow: ellipsis;
+}
+
+.link_membro {
+    max-width: 200px;
+    overflow: hidden;
+}
+
+.link-formated {
+    width: 100% !important;
+}
+
 /* Tabela */
 .tabela-denuncias {
     width: 90%;
@@ -143,7 +211,7 @@ button {
     }
 
     .tabela-denuncias {
-        width: 250px;
+        width: 90%;
         font-size: 12px;
     }
 
@@ -156,71 +224,8 @@ button {
         font-size: 12px;
         padding: 6px 12px;
     }
-}
 
-/* Estilos para a seção de filtro */
-.filtro {
-    margin: 20px;
-    padding: 15px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-filtro {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.campo-filtro {
-    flex: 1;
-    min-width: 250px;
-}
-
-    .campo-filtro label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 5px;
+    .filtro {
+        width: 90%;
     }
-
-    .campo-filtro input,
-    .campo-filtro select {
-        width: 100%;
-        padding: 8px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-.btn-filtrar {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-    .btn-filtrar:hover {
-        background-color: #0056b3;
-    }
-
-.container-btn-pesquisar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.link_membro_text {
-    text-overflow: ellipsis;
-}
-
-.link_membro {
-    max-width: 200px;
-    overflow: hidden;
-}
-
-.link-formated {
-    width: 100% !important;
 }

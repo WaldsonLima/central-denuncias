@@ -15,7 +15,10 @@
 <body>
     <header>
         <h1>Central de Denúncias</h1>
-        <a asp-action="Create" class="link-formated c"><button class="btn-criar">Criar Denúncia</button></a>
+        @if (@ViewBag.adm == "true")
+        {
+            <a asp-action="Create" class="link-formated c"><button class="btn-criar">Criar Denúncia</button></a>
+        }
     </header>
 
     <!-- Filtro de Pesquisa -->
@@ -42,7 +45,7 @@
             </thead>
             <tbody>
                 <!-- Exemplo de linha de dados -->
-                @foreach (var item in Model)
+                @foreach (var item in Model.OrderByDescending(i => i.data_criacao))
                 {
                     <tr>
                         <td class="link_membro"><a class ="link_membro_text" href="@item.link_membro">@item.link_membro</a></td>

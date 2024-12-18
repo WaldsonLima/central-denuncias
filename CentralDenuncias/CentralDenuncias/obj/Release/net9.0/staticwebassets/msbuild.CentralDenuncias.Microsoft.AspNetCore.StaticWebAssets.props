@@ -48,8 +48,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7h2eg7frh6</Fingerprint>
-      <Integrity>9b9F711P0+mGB6zFyKz8sCOrBj/LgAXG3/gab8N1zTo=</Integrity>
+      <Fingerprint>ahuacems6r</Fingerprint>
+      <Integrity>MmNT6y8vIJKnXs1IThcF6gD3JkconOi++todX4ZSe28=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\denuncia.css'))</OriginalItemSpec>

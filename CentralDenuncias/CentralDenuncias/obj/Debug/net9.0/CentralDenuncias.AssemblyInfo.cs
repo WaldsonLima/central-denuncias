@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CentralDenuncias")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62bcc9b8394f4b2385ac7a7989c72e4d52a6bd02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28604851dd15584c3f7062273296e1a797bd6bfb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CentralDenuncias")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CentralDenuncias")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
