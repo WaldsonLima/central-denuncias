@@ -19,7 +19,7 @@ builder.Services
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(30);  // Tempo máximo de inatividade antes de expirar
+    options.IdleTimeout = TimeSpan.FromMinutes(10);  // Tempo máximo de inatividade antes de expirar
     options.Cookie.HttpOnly = true;  // Protege o cookie da sessão
     options.Cookie.IsEssential = true;  // Necessário para conformidade com o GDPR
 });

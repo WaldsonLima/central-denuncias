@@ -23,6 +23,10 @@
     <main class="form-main">
         <form asp-action="Create" class="form-criar">
             <div class="campo-form">
+                <label asp-for="nome_membro">Nome Membro</label>
+                <input asp-for="nome_membro" type="text" id="nome_membro" name="nome_membro" placeholder="Insira o nome do membro" required>
+            </div>
+            <div class="campo-form">
                 <label asp-for="link_membro">Link Membro</label>
                 <input asp-for="link_membro" type="text" id="link_membro" name="link_membro" placeholder="Insira o link do membro" required>
             </div>
@@ -46,8 +50,25 @@
             </div>
             <div class="campo-form">
                 <label asp-for="staffer">Staffer Responsável</label>
-                <input asp-for="staffer" type="text" id="staffer" name="staffer" placeholder="Nome do staffer responsável" required>
+                <select asp-for="staffer" id="staffer" name="staffer" required>
+                    <option value="" disabled selected>Selecione o staffer</option>
+                    <option value="Totoro">Totoro</option>
+                    <option value="Aeon">Aeon</option>
+                    <option value="Agnes">Agnes</option>
+                    <option value="Deku">Deku</option>
+                    <option value="Gab">Gab</option>
+                    <option value="Yuri">Yuri</option>
+                    <option value="Moon">Moon</option>
+                    <option value="ForUs">ForUs</option>
+                    <option value="Olivia">Olivia</option>
+                    <option value="Rychard">Rychard</option>
+                    <option value="Manoella">Manoella</option>
+                    <option value="Akashy">Akashy</option>
+                    <option value="Misa">Misa</option>
+                </select>
             </div>
+
+            <input asp-for="status" type="text" id="status" name="status" value="status" hidden>
 
             <div class="botoes-form">
                 <button type="reset" class="btn-cancelar">Limpar</button>

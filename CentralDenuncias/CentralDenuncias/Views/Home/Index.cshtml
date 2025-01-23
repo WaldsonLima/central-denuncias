@@ -11,14 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Denúncias</title>
     <link rel="stylesheet" href="~/css/denuncia.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Central de Denúncias</h1>
-        @if (@ViewBag.adm == "true")
-        {
-            <a asp-action="Create" class="link-formated c"><button class="btn-criar">Criar Denúncia</button></a>
-        }
+        <a asp-action="Create" class="link-formated c"><button class="btn-criar">Criar Denúncia</button></a>
     </header>
 
     <!-- Filtro de Pesquisa -->
@@ -38,8 +36,9 @@
         <table class="tabela-denuncias">
             <thead>
                 <tr>
-                    <th>Link Membro</th>
+                    <th>Membro</th>
                     <th>Data</th>
+                    <th></th>
                     <th></th>
                 </tr>
             </thead>
@@ -52,12 +51,26 @@
                         var timeZone = TimeZoneInfo.FindSystemTimeZoneById("E. South America Standard Time"); // Fuso horário de Brasília (GMT-3)
                         var dataBrasilia = TimeZoneInfo.ConvertTimeFromUtc(item.data_criacao, timeZone);
 
-                    <tr>
-                        <td class="link_membro"><a class ="link_membro_text" href="@item.link_membro">@item.link_membro</a></td>
+                    <tr id="registro-@item.id">
+                        <td class="link_membro"><a class ="link_membro_text" href="@item.link_membro">@item.nome_membro</a></td>
                         <td>@dataBrasilia.ToString("dd/MM/yyyy")</td>
                         <td>
                             <button class="btn-detalhes"><a asp-action="Details" asp-route-id="@item.id" class="link-formated">Detalhes</a></button>
                         </td>
+                            <td class="status-column">
+                                @if (item.status == "pendente")
+                                {
+                                    <i class="fas fa-spinner icon-status-table" style="color: blue;"></i>
+                                }
+                                @if (item.status == "aprovada")
+                                {
+                                    <i class="fas fa-check icon-status-table" style="color: green;"></i>
+                                }
+                                @if (item.status == "reprovada")
+                                {
+                                    <i class="fas fa-times icon-status-table" style="color: red;"></i>
+                                }
+                            </td>
                     </tr>
                     }
                 }

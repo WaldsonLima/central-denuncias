@@ -80,6 +80,87 @@ h1 {
         line-height: 1.6;
     }
 
+.status-denuncia {
+    margin-top: 1%;
+}
+
+.status-column {
+    margin: 0 10%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-aprovar {
+    background-color: #28a745;
+    color: white;
+}
+
+    .btn-aprovar:hover {
+        background-color: #218838;
+    }
+
+.btn-reprovar {
+    background-color: #dc3545;
+    color: white;
+}
+
+    .btn-reprovar:hover {
+        background-color: #c82333;
+    }
+
+.aprovar-status {
+    width: 80%;
+    margin: 5% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 14px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button.btn-editar {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    button.btn-editar:hover {
+        background-color: #0056b3;
+    }
+
+.btn-deletar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+    .btn-deletar:hover {
+        background-color: darkred;
+    }
+
 /* Estilos para responsividade */
 @media screen and (max-width: 768px) {
     .detalhes-container {

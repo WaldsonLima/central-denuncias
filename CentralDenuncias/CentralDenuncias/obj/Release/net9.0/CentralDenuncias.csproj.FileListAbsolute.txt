@@ -226,7 +226,6 @@ C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\Central
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\scopedcss\bundle\CentralDenuncias.styles.css
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\scopedcss\projectbundle\CentralDenuncias.bundle.scp.css
-C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\x6urclh6sc-qakmwom2jl.gz
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\y60byio36t-b9sayid5wm.gz
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\hllwbsvhu1-61n19gt1b8.gz
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\3vap4asgmy-xtxxf3hu2r.gz
@@ -307,6 +306,7 @@ C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\Central
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\CentralDenuncias.pdb
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\CentralDenuncias.genruntimeconfig.cache
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\ref\CentralDenuncias.dll
-C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\86dlc61rbw-ahuacems6r.gz
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\bin\Release\net9.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\a6z8nr0dv8-ny3lq89l23.gz
+C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\86dlc61rbw-kkncp1pb0t.gz
+C:\Users\PC\Desktop\Central Denuncias\central-denuncias\CentralDenuncias\CentralDenuncias\obj\Release\net9.0\compressed\x6urclh6sc-jc79tk6n84.gz

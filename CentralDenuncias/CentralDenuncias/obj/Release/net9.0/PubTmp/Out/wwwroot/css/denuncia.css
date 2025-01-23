@@ -127,7 +127,7 @@ h1 {
     .tabela-denuncias th,
     .tabela-denuncias td {
         padding: 12px;
-        text-align: left;
+        text-align: center;
     }
 
     .tabela-denuncias th {
@@ -170,16 +170,20 @@ button {
 .btn-detalhes {
     background-color: #007bff;
     color: white;
+    margin: 0;
 }
 
     .btn-detalhes:hover {
         background-color: #0056b3;
     }
 
+.icon-status-table {
+    margin: 0 5%; 
+}
+
 /* Estilos para responsividade */
 @media screen and (max-width: 768px) {
-    .tabela-denuncias th,
-    .tabela-denuncias td {
+    .tabela-denuncias th, .tabela-denuncias td {
         font-size: 12px;
         padding: 8px;
     }

@@ -51,15 +51,16 @@ namespace CentralDenuncias.Controllers
                 { "3301", new Tuple<string, string>("Totoro", "true") },
                 { "9ijq", new Tuple<string, string>("Aeon", "false") },
                 { "lgcy", new Tuple<string, string>("Agnes", "false") },
-                { "69zc", new Tuple<string, string>("Deku", "true") },
-                { "01dm", new Tuple<string, string>("Gab", "false") },
-                { "iqgc", new Tuple<string, string>("Aryc", "false") },
+                { "69zc", new Tuple<string, string>("Deku", "false") },
+                { "01dm", new Tuple<string, string>("Gab", "true") },
                 { "lt07", new Tuple<string, string>("Yuri", "false") },
                 { "2bfn", new Tuple<string, string>("Moon", "false") },
                 { "yy9r", new Tuple<string, string>("ForUs", "false") },
                 { "cnn9", new Tuple<string, string>("Olivia", "false") },
-                { "7tyt", new Tuple<string, string>("Rychard", "true") },
-                { "adnb", new Tuple<string, string>("Manoella", "false") }
+                { "7tyt", new Tuple<string, string>("Rychard", "false") },
+                { "adnb", new Tuple<string, string>("Manoella", "false") },
+                { "u566", new Tuple<string, string>("Akashy", "false") },
+                { "1g6l", new Tuple<string, string>("Misa", "false") }
             };
 
             if (usuarios.ContainsKey(senha))
@@ -109,6 +110,8 @@ namespace CentralDenuncias.Controllers
         // GET: denuncia/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            string adm = HttpContext.Session.GetString("adm");
+            ViewBag.adm = adm;
             if (id == null)
             {
                 return NotFound();
@@ -142,6 +145,69 @@ namespace CentralDenuncias.Controllers
             return match.Success ? match.Groups[1].Value : string.Empty;
         }
 
+        [HttpPost]
+        public IActionResult AlterarStatus(int id, string status)
+        {
+            // Buscar a denúncia no banco de dados pelo ID
+            var denuncia = _context.denuncia.FirstOrDefault(d => d.id == id);
+
+            if (denuncia == null)
+            {
+                // Se a denúncia não for encontrada, retornar erro ou redirecionar
+                return NotFound();
+            }
+
+            // Atualizar o status da denúncia
+            denuncia.status = status;
+
+            // Salvar as mudanças no banco de dados
+            _context.SaveChanges();
+
+            // Redirecionar para a página de detalhes da denúncia
+            return RedirectToAction("Details", new { id = denuncia.id });
+        }
+
+        [HttpPost]
+        public IActionResult AtualizarNome(int id, string nome_membro)
+        {
+            // Buscar a denúncia no banco de dados pelo ID
+            var denuncia = _context.denuncia.FirstOrDefault(d => d.id == id);
+
+            if (denuncia == null)
+            {
+                // Se a denúncia não for encontrada, retornar erro ou redirecionar
+                return NotFound();
+            }
+
+            // Atualizar o nome do membro
+            denuncia.nome_membro = nome_membro;
+
+            // Salvar as mudanças no banco de dados
+            _context.SaveChanges();
+
+            // Redirecionar para a página de detalhes da denúncia
+            return RedirectToAction("Details", new { id = denuncia.id });
+        }
+
+        [HttpPost]
+        public IActionResult Deletar(int id)
+        {
+            var denuncia = _context.denuncia.FirstOrDefault(d => d.id == id);
+
+            if (denuncia == null)
+            {
+                // Se a denúncia não for encontrada, redireciona para uma página de erro ou para a lista de denúncias
+                return NotFound();
+            }
+
+            // Remover o registro do banco de dados
+            _context.denuncia.Remove(denuncia);
+            _context.SaveChanges();
+
+            // Após deletar, redirecionar de volta para a página principal ou lista de registros
+            return RedirectToAction("Index", "Home");
+        }
+
         // GET: denuncia/Create
         public IActionResult Create()
         {
@@ -153,10 +219,11 @@ namespace CentralDenuncias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,link_membro,descricao,provas,staffer,denuncia_permanente,data_criacao,data_alteracao")] denuncia denuncia)
+        public async Task<IActionResult> Create([Bind("id,nome_membro,link_membro,descricao,provas,staffer,denuncia_permanente,status,data_criacao,data_alteracao")] denuncia denuncia)
         {
             denuncia.data_criacao = DateTime.UtcNow;
             denuncia.data_alteracao = DateTime.UtcNow;
+            denuncia.status = "pendente";
 
             if (ModelState.IsValid)
             {
