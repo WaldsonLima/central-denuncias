@@ -22,9 +22,7 @@
 <body>
     <header>
         <h1>Detalhes da Denúncia</h1>
-        <div class="container-btn-voltar">
-            <a href="@Url.Action("Index", "Home") class="btn-voltar">Voltar</a>
-        </div>
+        <div class="container-btn-voltar"><a href="@Url.Action("Index", "Home")" class="btn-voltar">Voltar</a></div>
     </header>
 
     <main class="detalhes-main">
@@ -96,7 +94,7 @@
                 }
             </div>
             <div class="detalhe">
-                @if (Model.status != "aprovada")
+                @if (Model.status != "aprovada" && Model.id > 350)
                 {
                     <form method="post" action="@Url.Action("Deletar", "Home")" onsubmit="return confirm('Tem certeza que deseja deletar esta denúncia?');">
                         <input type="hidden" name="id" value="@Model.id" />

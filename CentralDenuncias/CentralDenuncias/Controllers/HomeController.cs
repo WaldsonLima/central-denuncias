@@ -19,18 +19,25 @@ namespace CentralDenuncias.Controllers
         }
 
         // GET: denuncia
-        public async Task<IActionResult> Index(string link)
+        public async Task<IActionResult> Index(string link, string nome)
         {
             var denuncias = _context.denuncia.AsQueryable();
             string adm = HttpContext.Session.GetString("adm");
 
             if (!string.IsNullOrEmpty(link))
             {
+                link = link.Replace("http://", "").Replace("https://", "");
                 denuncias = denuncias.Where(d => d.link_membro.Contains(link));
+            }
+
+            if (!string.IsNullOrEmpty(nome))
+            {
+                denuncias = denuncias.Where(d => d.nome_membro.Contains(nome));
             }
 
             // Passando os parâmetros para a View
             ViewData["Link"] = link;
+            ViewData["Nome"] = nome;
             ViewBag.adm = adm;
 
             return View(await denuncias.ToListAsync());
@@ -60,7 +67,8 @@ namespace CentralDenuncias.Controllers
                 { "7tyt", new Tuple<string, string>("Rychard", "false") },
                 { "adnb", new Tuple<string, string>("Manoella", "false") },
                 { "u566", new Tuple<string, string>("Akashy", "false") },
-                { "1g6l", new Tuple<string, string>("Misa", "false") }
+                { "1g6l", new Tuple<string, string>("Misa", "false") },
+                { "ndyp", new Tuple<string, string>("Renato", "false") }
             };
 
             if (usuarios.ContainsKey(senha))
@@ -221,6 +229,8 @@ namespace CentralDenuncias.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("id,nome_membro,link_membro,descricao,provas,staffer,denuncia_permanente,status,data_criacao,data_alteracao")] denuncia denuncia)
         {
+            // Converter o nome do membro para minúsculas
+            denuncia.nome_membro = denuncia.nome_membro.ToLower();
             denuncia.data_criacao = DateTime.UtcNow;
             denuncia.data_alteracao = DateTime.UtcNow;
             denuncia.status = "pendente";

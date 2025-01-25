@@ -23,8 +23,10 @@
     <section class="filtro">
         <form asp-action="Index" class="form-filtro">
             <div class="campo-filtro">
-                <label for="link">Link do membro</label>
-                <input type="text" id="link" name="link" value="@ViewData["link"]" placeholder="Pesquisar por link">
+                <input type="text" id="link" name="link" value="@ViewData["link"]" placeholder="Link do membro">
+            </div>
+            <div class="campo-filtro">
+                <input type="text" id="nome" name="nome" value="@ViewData["nome"]" placeholder="Nome do membro">
             </div>
 
             <div class="container-btn-pesquisar"><button type="submit" class="btn-filtrar">Pesquisar</button></div>

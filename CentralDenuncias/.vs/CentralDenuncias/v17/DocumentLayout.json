@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\wwwroot\\css\\detalhes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\wwwroot\\css\\detalhes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\views\\home\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\wwwroot\\css\\detalhes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|solutionrelative:centraldenuncias\\wwwroot\\css\\detalhes.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C2929D1B-5D28-47EC-9A42-45D71275CCA8}|CentralDenuncias\\CentralDenuncias.csproj|c:\\users\\pc\\desktop\\central denuncias\\central-denuncias\\centraldenuncias\\centraldenuncias\\wwwroot\\css\\denuncia.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "detalhes.css",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\detalhes.css",
               "RelativeDocumentMoniker": "CentralDenuncias\\wwwroot\\css\\detalhes.css",
@@ -66,8 +66,7 @@
               "RelativeToolTip": "CentralDenuncias\\wwwroot\\css\\detalhes.css",
               "ViewState": "AgIAAH8AAAAAAAAAAAAqwKIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-21T16:17:45.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T16:17:45.997Z"
             },
             {
               "$type": "Document",
@@ -83,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Views\\Home\\Create.cshtml",
               "RelativeDocumentMoniker": "CentralDenuncias\\Views\\Home\\Create.cshtml",
@@ -119,38 +118,38 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Views\\Home\\Details.cshtml",
               "RelativeDocumentMoniker": "CentralDenuncias\\Views\\Home\\Details.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Views\\Home\\Details.cshtml",
               "RelativeToolTip": "CentralDenuncias\\Views\\Home\\Details.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAABKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAB0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T18:33:38.622Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-17T18:33:38.622Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "CentralDenuncias\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CentralDenuncias\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAACEAAAAAAAAAAAAgwDUAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T18:11:43.784Z"
+              "WhenOpened": "2024-12-17T18:11:43.784Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CentralDenuncias\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CentralDenuncias\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAUwEkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAMUAAAAAAAAAAAArwOMAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-17T17:41:22.362Z",
               "EditorCaption": ""
