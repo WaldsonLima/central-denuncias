@@ -28,6 +28,10 @@
     <main class="detalhes-main">
         <section class="detalhes-container">
             <div class="detalhe">
+                <strong>ID da Denúncia:</strong>
+                <p>@Html.DisplayFor(model => model.id)</p>
+            </div>
+            <div class="detalhe">
                 <strong>Nome do Membro:</strong>
                 <!--Essa é uma solução paleativa para uma situação específica, esse código deve ser retirado no futuro-->
                 @* @if (@ViewBag.adm == "true") *@
@@ -42,7 +46,6 @@
                 @* { *@
                 @*     <p>@Html.DisplayFor(model => model.nome_membro)</p> *@
                 @* } *@
-
                 <p>@Html.DisplayFor(model => model.nome_membro)</p>
             </div>
             <div class="detalhe">
@@ -55,7 +58,13 @@
             </div>
             <div class="detalhe">
                 <strong>Provas:</strong>
-
+                @if (!string.IsNullOrEmpty(Model.provas))
+                {
+                    <img src="@Model.provas" alt="Prova" width="300" />
+                }
+            </div>
+            <div class="detalhe">
+                <strong>Link Provas:</strong>
                 <p><a href="@Html.DisplayFor(model => model.provas)">Clique para baixar</a></p>
             </div>
             <div class="detalhe">

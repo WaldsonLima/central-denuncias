@@ -19,10 +19,15 @@ namespace CentralDenuncias.Controllers
         }
 
         // GET: denuncia
-        public async Task<IActionResult> Index(string link, string nome)
+        public async Task<IActionResult> Index(string link, string nome, int id)
         {
             var denuncias = _context.denuncia.AsQueryable();
             string adm = HttpContext.Session.GetString("adm");
+
+            if (id > 0)
+            {
+                denuncias = denuncias.Where(d => d.id == id);
+            }
 
             if (!string.IsNullOrEmpty(link))
             {
@@ -38,6 +43,7 @@ namespace CentralDenuncias.Controllers
             // Passando os parâmetros para a View
             ViewData["Link"] = link;
             ViewData["Nome"] = nome;
+            ViewData["id"] = id;
             ViewBag.adm = adm;
 
             return View(await denuncias.ToListAsync());
@@ -60,11 +66,9 @@ namespace CentralDenuncias.Controllers
                 { "lgcy", new Tuple<string, string>("Agnes", "false") },
                 { "69zc", new Tuple<string, string>("Deku", "false") },
                 { "01dm", new Tuple<string, string>("Gab", "true") },
-                { "lt07", new Tuple<string, string>("Yuri", "false") },
                 { "2bfn", new Tuple<string, string>("Moon", "false") },
                 { "yy9r", new Tuple<string, string>("ForUs", "false") },
                 { "cnn9", new Tuple<string, string>("Olivia", "false") },
-                { "7tyt", new Tuple<string, string>("Rychard", "false") },
                 { "adnb", new Tuple<string, string>("Manoella", "false") },
                 { "u566", new Tuple<string, string>("Akashy", "false") },
                 { "1g6l", new Tuple<string, string>("Misa", "false") },
@@ -128,16 +132,16 @@ namespace CentralDenuncias.Controllers
             var denuncia = await _context.denuncia
                 .FirstOrDefaultAsync(m => m.id == id);
 
-            string fileId = ExtractFileId(denuncia.provas);
+            //string fileId = ExtractFileId(denuncia.provas);
 
-            if (!string.IsNullOrEmpty(fileId))
-            {
-                // Gerar o novo link
-                string newLink = $"https://drive.google.com/uc?export=download&id={fileId}";
+            //if (!string.IsNullOrEmpty(fileId))
+            //{
+            //    // Gerar o novo link
+            //    string newLink = $"https://drive.google.com/uc?export=download&id={fileId}";
 
-                // Atualizar o link no banco de dados
-                denuncia.provas = newLink;
-            }
+            //    // Atualizar o link no banco de dados
+            //    denuncia.provas = newLink;
+            //}
 
             if (denuncia == null)
             {
@@ -243,6 +247,7 @@ namespace CentralDenuncias.Controllers
             }
             return View(denuncia);
         }
+
 
         // GET: denuncia/Edit/5
         public async Task<IActionResult> Edit(int? id)

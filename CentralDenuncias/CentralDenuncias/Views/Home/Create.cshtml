@@ -21,7 +21,7 @@
     </header>
 
     <main class="form-main">
-        <form asp-action="Create" class="form-criar">
+        <form asp-action="Create" class="form-criar" enctype="multipart/form-data">
             <div class="campo-form">
                 <label asp-for="nome_membro">Nome Membro</label>
                 <input asp-for="nome_membro" type="text" id="nome_membro" name="nome_membro" placeholder="Insira o nome do membro" required>
@@ -36,7 +36,16 @@
             </div>
             <div class="campo-form">
                 <label asp-for="provas">Provas</label>
-                <input asp-for="provas" type="text" id="provas" name="provas" placeholder="Insira os links das provas" required>
+                <div class="custom-file-upload">
+                    <input asp-for="provas" type="file" id="provasimg" name="provasimg" accept="image/*">
+                    <label for="provasimg" class="btn-upload">Escolher Imagem</label>
+                    <span id="file-name" class="file-name"></span>
+                </div>
+                <div id="preview" class="image-preview"></div>
+            </div>
+            <div class="campo-form" id="provas-link-div">
+                <label for="provas-link">Link da Imagem</label>
+                <input type="text" id="provas" name="provas" readonly>
             </div>
             <div class="campo-form">
                 <label asp-for="denuncia_permanente">Tipo da denúncia</label>
@@ -80,9 +89,76 @@
     <footer>
         <p>&copy; 2024 Central de Denúncias Namoro!. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        document.getElementById('provasimg').addEventListener('change', function(event) {
+            var file = event.target.files[0];
+            if (file) {
+                var formData = new FormData();
+                formData.append('image', file);
+
+                // Aqui você coloca a chave da sua API do imgBB
+                var apiKey = 'e4370b4a8d75b95621796d96497ee063'; 
+
+                // Envia a imagem para o imgbb via API
+                fetch('https://api.imgbb.com/1/upload?key=' + apiKey, {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.json())
+                .then(data => {
+                    // Verificar se o upload foi bem-sucedido
+                    if (data.success) {
+                        console.log('Imagem carregada com sucesso:', data.data.url);
+
+                        // Exibe a prévia da imagem
+                        var preview = document.getElementById('preview');
+                        preview.innerHTML = ''; // Limpa a prévia anterior
+                        var img = document.createElement('img');
+                        img.src = data.data.url;
+                        preview.appendChild(img);
+                        preview.style.display = 'block'; // Mostra a prévia
+
+                        // Aqui você pode exibir o link da imagem em um campo de texto
+                        document.getElementById('provasimg').value = '';  // Mantém o campo vazio
+                        // Preenche um campo separado para mostrar o link
+                        var linkDisplay = document.getElementById('provas');
+                        linkDisplay.value = data.data.url;  // Exibe o link da imagem no campo de texto
+                    } else {
+                        console.error('Falha no upload da imagem:', data);
+                        alert('Falha no upload da imagem. Tente novamente!');
+                    }
+                })
+                .catch(error => {
+                    console.error('Erro ao fazer upload da imagem:', error);
+                    alert('Erro ao enviar a imagem. Por favor, tente novamente!');
+                });
+            } else {
+                console.error('Nenhum arquivo selecionado');
+                alert('Nenhum arquivo selecionado. Por favor, selecione uma imagem.');
+            }
+        });
+
+        // Validação de formulário no submit
+        document.querySelector('form').addEventListener('submit', function(event) {
+            var provasInput = document.getElementById('provasimg');
+            var provasLink = document.getElementById('provas');
+
+            // Verifica se um arquivo foi selecionado ou se o link da imagem foi preenchido
+            if (provasInput.files.length === 0 && !provasLink.value) {
+                alert('Você deve carregar uma imagem ou fornecer um link para a prova!');
+                event.preventDefault(); // Impede o envio do formulário
+            }
+        });
+    </script>
+
+
+
 </body>
 </html>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 }

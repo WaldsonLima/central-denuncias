@@ -23,10 +23,13 @@
     <section class="filtro">
         <form asp-action="Index" class="form-filtro">
             <div class="campo-filtro">
-                <input type="text" id="link" name="link" value="@ViewData["link"]" placeholder="Link do membro">
+                <input type="text" id="id" name="id" value="@((ViewData["id"] == null || ViewData["id"].ToString() == "0") ? "" : ViewData["id"])" placeholder="ID da Denúncia">
             </div>
             <div class="campo-filtro">
-                <input type="text" id="nome" name="nome" value="@ViewData["nome"]" placeholder="Nome do membro">
+                <input type="text" id="link" name="link" value="@ViewData["link"]" placeholder="Link do Membro">
+            </div>
+            <div class="campo-filtro">
+                <input type="text" id="nome" name="nome" value="@ViewData["nome"]" placeholder="Nome do Membro">
             </div>
 
             <div class="container-btn-pesquisar"><button type="submit" class="btn-filtrar">Pesquisar</button></div>
@@ -38,6 +41,7 @@
         <table class="tabela-denuncias">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Membro</th>
                     <th>Data</th>
                     <th></th>
@@ -54,6 +58,7 @@
                         var dataBrasilia = TimeZoneInfo.ConvertTimeFromUtc(item.data_criacao, timeZone);
 
                     <tr id="registro-@item.id">
+                        <td>@item.id</td>
                         <td class="link_membro"><a class ="link_membro_text" href="@item.link_membro">@item.nome_membro</a></td>
                         <td>@dataBrasilia.ToString("dd/MM/yyyy")</td>
                         <td>
