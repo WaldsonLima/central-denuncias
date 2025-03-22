@@ -66,7 +66,6 @@ namespace CentralDenuncias.Controllers
                 { "lgcy", new Tuple<string, string>("Agnes", "false") },
                 { "69zc", new Tuple<string, string>("Deku", "false") },
                 { "01dm", new Tuple<string, string>("Gab", "true") },
-                { "2bfn", new Tuple<string, string>("Moon", "false") },
                 { "yy9r", new Tuple<string, string>("ForUs", "false") },
                 { "cnn9", new Tuple<string, string>("Olivia", "false") },
                 { "adnb", new Tuple<string, string>("Manoella", "false") },
@@ -202,7 +201,7 @@ namespace CentralDenuncias.Controllers
         }
 
         [HttpPost]
-        public IActionResult Deletar(int id)
+        public async Task<IActionResult> Deletar(int id)
         {
             var denuncia = _context.denuncia.FirstOrDefault(d => d.id == id);
 
@@ -210,6 +209,32 @@ namespace CentralDenuncias.Controllers
             {
                 // Se a denúncia não for encontrada, redireciona para uma página de erro ou para a lista de denúncias
                 return NotFound();
+            }
+
+            if (denuncia != null)
+            {
+                // Chama a API do imgbb para deletar a imagem, se existir o delete_url
+                if (!string.IsNullOrEmpty(denuncia.delete_token))
+                {
+                    // Aqui o delete_url que foi salvo no banco
+                    var deleteUrl = denuncia.delete_token;
+
+                    // Faz a requisição para excluir a imagem, passando a URL de exclusão
+                    var client = new HttpClient();
+                    var response = await client.GetAsync(deleteUrl);
+
+                    // Verifica se a resposta foi bem-sucedida
+                    if (response.IsSuccessStatusCode)
+                    {
+                        // Imagem excluída com sucesso
+                        Console.WriteLine("Imagem excluída com sucesso.");
+                    }
+                    else
+                    {
+                        // Lida com erro na exclusão
+                        Console.WriteLine("Erro ao excluir a imagem.");
+                    }
+                }
             }
 
             // Remover o registro do banco de dados
@@ -231,7 +256,7 @@ namespace CentralDenuncias.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("id,nome_membro,link_membro,descricao,provas,staffer,denuncia_permanente,status,data_criacao,data_alteracao")] denuncia denuncia)
+        public async Task<IActionResult> Create([Bind("id,nome_membro,link_membro,descricao,provas,delete_token,staffer,denuncia_permanente,status,data_criacao,data_alteracao")] denuncia denuncia)
         {
             // Converter o nome do membro para minúsculas
             denuncia.nome_membro = denuncia.nome_membro.ToLower();

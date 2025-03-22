@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "kfXnDX0fK7PYtMuyzZDqhpnmWyzSt1+OFckP3UKjEf0=",
+  "Hash": "yCsv3LykkJw6YBg3jPrYOxogUEIqXtjlFWjqdKVTWPg=",
   "Source": "CentralDenuncias",
   "BasePath": "_content/CentralDenuncias",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-nrj6fm3upz.gz",
+      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-a6vabemcvj.gz",
       "SourceId": "CentralDenuncias",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\",
       "BasePath": "_content/CentralDenuncias",
-      "RelativePath": "css/criar#[.{fingerprint=nrj6fm3upz}]?.css.gz",
+      "RelativePath": "css/criar#[.{fingerprint=a6vabemcvj}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "dh3eynzufs",
-      "Integrity": "3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk=",
+      "Fingerprint": "9ccf4otuyp",
+      "Integrity": "OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css"
@@ -1487,12 +1487,12 @@
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-nrj6fm3upz.br",
+      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-a6vabemcvj.br",
       "SourceId": "CentralDenuncias",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\",
       "BasePath": "_content/CentralDenuncias",
-      "RelativePath": "css/criar#[.{fingerprint=nrj6fm3upz}]?.css.br",
+      "RelativePath": "css/criar#[.{fingerprint=a6vabemcvj}]?.css.br",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -1501,8 +1501,8 @@
       "RelatedAsset": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "br",
-      "Fingerprint": "j7eumae87l",
-      "Integrity": "kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo=",
+      "Fingerprint": "6pd2fn614f",
+      "Integrity": "2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css"
@@ -2887,8 +2887,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nrj6fm3upz",
-      "Integrity": "bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=",
+      "Fingerprint": "a6vabemcvj",
+      "Integrity": "rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\criar.css"
@@ -2976,6 +2976,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\img\\02-Kodo_cajado_estrela.gif",
+      "SourceId": "CentralDenuncias",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\",
+      "BasePath": "_content/CentralDenuncias",
+      "RelativePath": "img/02-Kodo_cajado_estrela#[.{fingerprint}]?.gif",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "aqn8nxdr53",
+      "Integrity": "3qp3Wrne6aClJXbjP3vI3LiVFnr4179LIaY6aYETVy8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\02-Kodo_cajado_estrela.gif"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\js\\site.js",
@@ -5289,13 +5310,13 @@
       ]
     },
     {
-      "Route": "css/criar.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-nrj6fm3upz.gz",
+      "Route": "css/criar.a6vabemcvj.css",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-a6vabemcvj.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000784929356"
+          "Quality": "0.000672043011"
         }
       ],
       "ResponseHeaders": [
@@ -5305,19 +5326,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1273"
+          "Value": "1487"
         },
         {
           "Name": "ETag",
-          "Value": "\"3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk=\""
+          "Value": "\"OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -5333,24 +5354,32 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=\""
+          "Value": "W/\"rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "a6vabemcvj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/criar.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE="
+          "Value": "sha256-rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg="
         }
       ]
     },
     {
-      "Route": "css/criar.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-nrj6fm3upz.br",
+      "Route": "css/criar.a6vabemcvj.css",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-a6vabemcvj.br",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "br",
-          "Quality": "0.000986193294"
+          "Quality": "0.000832639467"
         }
       ],
       "ResponseHeaders": [
@@ -5360,19 +5389,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1013"
+          "Value": "1200"
         },
         {
           "Name": "ETag",
-          "Value": "\"kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo=\""
+          "Value": "\"2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "no-cache"
+          "Value": "max-age=31536000, immutable"
         },
         {
           "Name": "Content-Encoding",
@@ -5388,18 +5417,26 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=\""
+          "Value": "W/\"rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=\""
         }
       ],
       "EndpointProperties": [
         {
+          "Name": "fingerprint",
+          "Value": "a6vabemcvj"
+        },
+        {
+          "Name": "label",
+          "Value": "css/criar.css"
+        },
+        {
           "Name": "integrity",
-          "Value": "sha256-bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE="
+          "Value": "sha256-rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg="
         }
       ]
     },
     {
-      "Route": "css/criar.css",
+      "Route": "css/criar.a6vabemcvj.css",
       "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5409,7 +5446,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4873"
+          "Value": "5706"
         },
         {
           "Name": "Content-Type",
@@ -5417,264 +5454,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=\""
+          "Value": "\"rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE="
-        }
-      ]
-    },
-    {
-      "Route": "css/criar.css.br",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-nrj6fm3upz.br",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1013"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo="
-        }
-      ]
-    },
-    {
-      "Route": "css/criar.css.gz",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-nrj6fm3upz.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1273"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk="
-        }
-      ]
-    },
-    {
-      "Route": "css/criar.nrj6fm3upz.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-nrj6fm3upz.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000784929356"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1273"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nrj6fm3upz"
-        },
-        {
-          "Name": "label",
-          "Value": "css/criar.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE="
-        }
-      ]
-    },
-    {
-      "Route": "css/criar.nrj6fm3upz.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-nrj6fm3upz.br",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "br",
-          "Quality": "0.000986193294"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1013"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "br"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "nrj6fm3upz"
-        },
-        {
-          "Name": "label",
-          "Value": "css/criar.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE="
-        }
-      ]
-    },
-    {
-      "Route": "css/criar.nrj6fm3upz.css",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4873"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5684,7 +5468,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nrj6fm3upz"
+          "Value": "a6vabemcvj"
         },
         {
           "Name": "label",
@@ -5692,13 +5476,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-bR9TMuvpX4uSgWEebapuwxA2rdB3BNp+QacJchrVLgE="
+          "Value": "sha256-rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg="
         }
       ]
     },
     {
-      "Route": "css/criar.nrj6fm3upz.css.br",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-nrj6fm3upz.br",
+      "Route": "css/criar.a6vabemcvj.css.br",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-a6vabemcvj.br",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5707,7 +5491,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1013"
+          "Value": "1200"
         },
         {
           "Name": "Content-Type",
@@ -5715,11 +5499,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo=\""
+          "Value": "\"2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5737,7 +5521,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nrj6fm3upz"
+          "Value": "a6vabemcvj"
         },
         {
           "Name": "label",
@@ -5745,13 +5529,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kT6M+buQFfK+oxTlUtwoPZaqc8hS46DO+l5M6kyxdLo="
+          "Value": "sha256-2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg="
         }
       ]
     },
     {
-      "Route": "css/criar.nrj6fm3upz.css.gz",
-      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-nrj6fm3upz.gz",
+      "Route": "css/criar.a6vabemcvj.css.gz",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-a6vabemcvj.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5760,7 +5544,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1273"
+          "Value": "1487"
         },
         {
           "Name": "Content-Type",
@@ -5768,11 +5552,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk=\""
+          "Value": "\"OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Jan 2025 00:00:12 GMT"
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5790,7 +5574,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "nrj6fm3upz"
+          "Value": "a6vabemcvj"
         },
         {
           "Name": "label",
@@ -5798,7 +5582,244 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-3yigp0f5ND/34V3m2QRaX2OdIFP+516NCFJcIXVYAgk="
+          "Value": "sha256-OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U="
+        }
+      ]
+    },
+    {
+      "Route": "css/criar.css",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-a6vabemcvj.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000672043011"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1487"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg="
+        }
+      ]
+    },
+    {
+      "Route": "css/criar.css",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-a6vabemcvj.br",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "br",
+          "Quality": "0.000832639467"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1200"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg="
+        }
+      ]
+    },
+    {
+      "Route": "css/criar.css",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\css\\criar.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5706"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rgDIJUyHD2ahTSjrTG/FFIW8AoPuhvuq/r1tAnRnEIg="
+        }
+      ]
+    },
+    {
+      "Route": "css/criar.css.br",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\publish\\a6z8nr0dv8-a6vabemcvj.br",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1200"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "br"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2nyfX/OCFSwossmlnanmtDgWtKmldo18BLDuw7XrdNg="
+        }
+      ]
+    },
+    {
+      "Route": "css/criar.css.gz",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\obj\\Release\\net9.0\\compressed\\a6z8nr0dv8-a6vabemcvj.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 02 Feb 2025 00:30:11 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OSAHVQua6O8gpRv30KcRfNvTMSQCIKylKcjXZvZLo0U="
         }
       ]
     },
@@ -7855,6 +7876,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+        }
+      ]
+    },
+    {
+      "Route": "img/02-Kodo_cajado_estrela.aqn8nxdr53.gif",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\img\\02-Kodo_cajado_estrela.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3qp3Wrne6aClJXbjP3vI3LiVFnr4179LIaY6aYETVy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 22:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aqn8nxdr53"
+        },
+        {
+          "Name": "label",
+          "Value": "img/02-Kodo_cajado_estrela.gif"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3qp3Wrne6aClJXbjP3vI3LiVFnr4179LIaY6aYETVy8="
+        }
+      ]
+    },
+    {
+      "Route": "img/02-Kodo_cajado_estrela.gif",
+      "AssetFile": "C:\\Users\\PC\\Desktop\\Central Denuncias\\central-denuncias\\CentralDenuncias\\CentralDenuncias\\wwwroot\\img\\02-Kodo_cajado_estrela.gif",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/gif"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3qp3Wrne6aClJXbjP3vI3LiVFnr4179LIaY6aYETVy8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Mar 2025 22:45:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3qp3Wrne6aClJXbjP3vI3LiVFnr4179LIaY6aYETVy8="
         }
       ]
     },

@@ -195,6 +195,45 @@ button {
     display: none;
 }
 
+/* Estilo do contêiner customizado */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+/* Estilo do select */
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+/* Adicionando a seta para indicar que o campo é clicável */
+.custom-dropdown i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #007bff;
+    pointer-events: none; /* A seta não interfere na interação */
+}
+
+select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+
 /* Responsividade */
 @media screen and (max-width: 768px) {
     .custom-file-upload label {

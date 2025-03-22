@@ -35,7 +35,16 @@
                 <textarea asp-for="descricao" id="descricao" name="descricao" placeholder="Descreva o motivo da denúncia" required></textarea>
             </div>
             <div class="campo-form">
-                <label asp-for="provas">Provas</label>
+                <label for="tipo_prova">Tipo da Prova</label>
+                <select id="tipo_prova" name="tipo_prova" onchange="toggleProvaInput()">
+                    <option value="imagem">Imagem</option>
+                    <option value="link">Link</option>
+                </select>
+            </div>
+
+            <!-- Campo de upload de imagem (inicialmente visível) -->
+            <div class="campo-form" id="campo-imagem">
+                <label for="provasimg">Prova</label>
                 <div class="custom-file-upload">
                     <input asp-for="provas" type="file" id="provasimg" name="provasimg" accept="image/*">
                     <label for="provasimg" class="btn-upload">Escolher Imagem</label>
@@ -43,9 +52,15 @@
                 </div>
                 <div id="preview" class="image-preview"></div>
             </div>
-            <div class="campo-form" id="provas-link-div">
-                <label for="provas-link">Link da Imagem</label>
-                <input type="text" id="provas" name="provas" readonly>
+
+            <!-- Campo de link (inicialmente oculto) -->
+            <div class="campo-form" id="campo-link" style="display: none;">
+                <label for="provas">Link da Prova</label>
+                <input type="text" id="provas" name="provas" placeholder="Insira o link do vídeo">
+            </div>
+
+            <div class="campo-form" id="delete-token-div" style="display: none;">
+                <input type="text" id="delete_token" name="delete_token" value="" hidden />
             </div>
             <div class="campo-form">
                 <label asp-for="denuncia_permanente">Tipo da denúncia</label>
@@ -66,14 +81,14 @@
                     <option value="Agnes">Agnes</option>
                     <option value="Deku">Deku</option>
                     <option value="Gab">Gab</option>
-                    <option value="Yuri">Yuri</option>
                     <option value="Moon">Moon</option>
                     <option value="ForUs">ForUs</option>
                     <option value="Olivia">Olivia</option>
-                    <option value="Rychard">Rychard</option>
+                    <option value="Renato ">Renato</option>
                     <option value="Manoella">Manoella</option>
                     <option value="Akashy">Akashy</option>
                     <option value="Misa">Misa</option>
+                    <option value="Morte">Morte</option>
                 </select>
             </div>
 
@@ -91,14 +106,14 @@
     </footer>
 
     <script>
-        document.getElementById('provasimg').addEventListener('change', function(event) {
+         document.getElementById('provasimg').addEventListener('change', function(event) {
             var file = event.target.files[0];
             if (file) {
                 var formData = new FormData();
                 formData.append('image', file);
 
                 // Aqui você coloca a chave da sua API do imgBB
-                var apiKey = 'e4370b4a8d75b95621796d96497ee063'; 
+                var apiKey = 'e4370b4a8d75b95621796d96497ee063';
 
                 // Envia a imagem para o imgbb via API
                 fetch('https://api.imgbb.com/1/upload?key=' + apiKey, {
@@ -107,23 +122,26 @@
                 })
                 .then(response => response.json())
                 .then(data => {
-                    // Verificar se o upload foi bem-sucedido
+                    console.log('Resposta da API do imgbb:', data);  // Adicione este log
+
                     if (data.success) {
                         console.log('Imagem carregada com sucesso:', data.data.url);
+                        console.log('Delete URL:', data.data.delete_url);  // Aqui, agora estamos tratando de delete_url
 
-                        // Exibe a prévia da imagem
                         var preview = document.getElementById('preview');
-                        preview.innerHTML = ''; // Limpa a prévia anterior
+                        preview.innerHTML = '';  // Limpa a prévia anterior
                         var img = document.createElement('img');
                         img.src = data.data.url;
                         preview.appendChild(img);
-                        preview.style.display = 'block'; // Mostra a prévia
+                        preview.style.display = 'block';  // Mostra a prévia
 
-                        // Aqui você pode exibir o link da imagem em um campo de texto
-                        document.getElementById('provasimg').value = '';  // Mantém o campo vazio
-                        // Preenche um campo separado para mostrar o link
                         var linkDisplay = document.getElementById('provas');
                         linkDisplay.value = data.data.url;  // Exibe o link da imagem no campo de texto
+
+                        // Agora vamos salvar o delete_url no campo oculto
+                        var deleteUrlInput = document.getElementById('delete_token');
+                        deleteUrlInput.value = data.data.delete_url;  // Salva a URL de exclusão
+
                     } else {
                         console.error('Falha no upload da imagem:', data);
                         alert('Falha no upload da imagem. Tente novamente!');
@@ -139,6 +157,7 @@
             }
         });
 
+
         // Validação de formulário no submit
         document.querySelector('form').addEventListener('submit', function(event) {
             var provasInput = document.getElementById('provasimg');
@@ -150,6 +169,26 @@
                 event.preventDefault(); // Impede o envio do formulário
             }
         });
+
+        function toggleProvaInput() {
+            var tipoProva = document.getElementById('tipo_prova').value;
+            var campoImagem = document.getElementById('campo-imagem');
+            var campoLink = document.getElementById('campo-link');
+
+            if (tipoProva === 'imagem') {
+                // Se o usuário escolher imagem, mostra o campo de imagem e esconde o de link
+                campoImagem.style.display = 'block';
+                campoLink.style.display = 'none';
+            } else if (tipoProva === 'link') {
+                // Se o usuário escolher link, mostra o campo de link e esconde o de imagem
+                campoImagem.style.display = 'none';
+                campoLink.style.display = 'block';
+            }
+        }
+
+        // Chama a função inicialmente para garantir que a visibilidade esteja correta ao carregar a página
+        toggleProvaInput();
+
     </script>
 
 

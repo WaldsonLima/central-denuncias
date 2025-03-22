@@ -68,6 +68,7 @@ wwwroot\css\denuncia.css
 wwwroot\css\detalhes.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\img\02-Kodo_cajado_estrela.gif
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
